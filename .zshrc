@@ -1,7 +1,9 @@
 # The following lines were added by compinstall
 fpath+=("$HOME/.zsh/pure")
 zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
-zstyle :compinstall filename '/home/sjq/.zshrc'
+zstyle ':completion:*' matcher-list '' 'm:{[:lower:]}={[:upper:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'r:|[._-/]=* r:|=* l:|=*'
+zstyle :compinstall filename "$HOME/.zshrc"
+
 
 autoload -Uz compinit
 compinit
